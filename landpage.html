@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smartwatch Ultra Mini Gold - Sandriane</title>
+  <meta name="description" content="Smartwatch Ultra Mini Gold: design elegante, notificações em tempo real, monitoramento de saúde, GPS integrado e bateria duradoura. Compre com garantia e segurança." />
+  <style>
+    body {
+      margin: 0; padding: 0; font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #39FF14; /* verde neon */
+    }
+    header {
+      background-color: transparent;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 4px solid #39FF14;
+      box-shadow: 0 3px 10px #39FF14;
+    }
+    header div.logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #39FF14;
+      flex: 1 1 150px;
+      text-shadow: 0 0 8px #39FF14;
+    }
+    nav {
+      flex: 2 1 400px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    nav a {
+      color: #39FF14;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+      text-shadow: 0 0 5px #39FF14;
+    }
+    nav a:hover {
+      color: #0f9200;
+      text-shadow: 0 0 12px #39FF14;
+    }
+    header a.cta-button {
+      background-color: transparent;
+      color: #39FF14;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      flex: 1 1 150px;
+      text-align: center;
+      margin-top: 10px;
+      border: 2px solid #39FF14;
+      box-shadow: 0 0 10px #39FF14;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    header a.cta-button:hover,
+    header a.cta-button:focus {
+      background-color: #39FF14;
+      color: #000000;
+      outline: none;
+      box-shadow: 0 0 20px #39FF14;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      box-sizing: border-box;
+      background-color: #111111cc;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #39FF14;
+      backdrop-filter: blur(8px);
+      color: #39FF14;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: #39FF14;
+      text-align: center;
+      margin-bottom: 35px;
+      text-shadow: 0 0 10px #39FF14;
+    }
+    #apresentacao-produto p {
+      font-size: 1.25rem;
+      color: #39FF14;
+      max-width: 650px;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 600;
+      text-shadow: 0 0 6px #0f9200;
+    }
+    #apresentacao-produto img.main-img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #39FF14;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      display: block;
+      loading: lazy;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    #apresentacao-produto img.main-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #39FF14;
+    }
+    #gallery {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    #gallery img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #39FF14;
+      cursor: pointer;
+      box-shadow: 0 0 10px #39FF14;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    #gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #39FF14;
+    }
+    #gallery img.selected {
+      border-color: #0f9200;
+      box-shadow: 0 0 30px #0f9200;
+      transform: scale(1.15);
+    }
+    #beneficios .container-beneficios {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 25px;
+    }
+    #beneficios div.beneficio {
+      background: #001f00;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 12px #39FF14;
+      text-align: center;
+      flex: 1 1 250px;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+      color: #39FF14;
+      text-shadow: 0 0 6px #0f9200;
+    }
+    #beneficios div.beneficio:hover {
+      background-color: #004400;
+      color: #aaffaa;
+      box-shadow: 0 0 25px #39FF14;
+    }
+    #beneficios div.beneficio div.icon {
+      font-size: 3.5rem;
+      text-shadow: 0 0 12px #39FF14;
+    }
+    #beneficios div.beneficio h3 {
+      color: #39FF14;
+      margin: 15px 0;
+      font-weight: 700;
+      text-shadow: 0 0 8px #39FF14;
+    }
+    #beneficios div.beneficio p {
+      color: #aaffaa;
+      font-weight: 600;
+    }
+    #depoimentos .container-depoimentos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      justify-content: center;
+    }
+    #depoimentos div.depoimento {
+      flex: 1 1 280px;
+      background: #001100;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 0 20px #39FF14;
+      color: #aaffaa;
+      font-style: normal;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      text-shadow: 0 0 6px #0f9200;
+    }
+    #depoimentos div.depoimento:hover {
+      background-color: #004400;
+      box-shadow: 0 0 30px #39FF14;
+      color: #d0ffd0;
+    }
+    #depoimentos p.texto {
+      font-style: italic;
+      color: #88ee88;
+      text-shadow: 0 0 5px #0f9200;
+    }
+    #depoimentos p.autor {
+      font-weight: 900;
+      margin-top: 20px;
+      color: #39FF14;
+      text-shadow: 0 0 10px #39FF14;
+    }
+    #faq div.faq-item {
+      margin-bottom: 25px;
+      background: #001100;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #39FF14;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: #39FF14;
+      text-shadow: 0 0 5px #0f9200;
+    }
+    #faq div.faq-item:hover {
+      background-color: #004400;
+      color: #aaffaa;
+    }
+    #faq h3 {
+      color: #39FF14;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 0 0 8px #39FF14;
+    }
+    #faq p {
+      color: #aaffaa;
+      margin: 8px 0 0 15px;
+      font-weight: 600;
+      text-shadow: 0 0 5px #0f9200;
+    }
+    footer {
+      background-color: #000000;
+      color: #39FF14;
+      padding: 25px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 -4px 15px #39FF14;
+      text-shadow: 0 0 6px #39FF14;
+    }
+    footer a {
+      color: #39FF14;
+      text-decoration: underline;
+      margin: 0 12px;
+      font-weight: 700;
+      text-shadow: 0 0 8px #39FF14;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: #aaffaa;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+      header a.cta-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        flex: none;
+      }
+      #beneficios .container-beneficios,
+      #depoimentos .container-depoimentos {
+        flex-direction: column;
+        align-items: center;
+      }
+      #gallery {
+        justify-content: center;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqs = document.querySelectorAll('#faq h3');
+      faqs.forEach((faq) => {
+        faq.addEventListener('click', () => {
+          const answer = faq.nextElementSibling;
+          if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+          } else {
+            answer.style.display = 'block';
+          }
+        });
+      });
+
+      const mainImg = document.querySelector('#apresentacao-produto img.main-img');
+      const thumbs = document.querySelectorAll('#gallery img');
+      thumbs.forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+          thumbs.forEach(t => t.classList.remove('selected'));
+          thumb.classList.add('selected');
+          mainImg.src = thumb.src;
+          mainImg.alt = thumb.alt;
+        });
+      });
+      if (thumbs.length > 0) thumbs[0].classList.add('selected');
+    });
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Sandriane</div>
+    <nav>
+      <a href="#apresentacao-produto">Produto</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="https://produto.mercadolivre.com.br/MLB-5361074012-smartwatch-ultra-mini-41mm-dourado-bluetooth-e-gps-_JM" target="_blank" rel="noopener" class="cta-button">Clique aqui para comprar</a>
+  </header>
+
+  <section id="apresentacao-produto">
+    <h2>Conheça o Ultra Mini Gold</h2>
+    <img class="main-img" src="https://http2.mlstatic.com/D_NQ_NP_2X_677160-MLB83674102910_042025-F-smartwatch-ultra-mini-41mm-dourado-bluetooth-e-gps.webp" alt="Smartwatch Ultra Mini Gold 41mm com Bluetooth e GPS" loading="lazy" />
+    <div id="gallery">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_677160-MLB83674102910_042025-F-smartwatch-ultra-mini-41mm-dourado-bluetooth-e-gps.webp" alt="Smartwatch Ultra Mini Gold - Frente" loading="lazy" />
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_788520-MLA83968135155_042025-F-smartwatch-ultra-mini-41mm-dourado-bluetooth-e-gps.webp" alt="Smartwatch Ultra Mini Gold - Frente 2" loading="lazy" />
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_774415-MLB83674377542_042025-F-smartwatch-ultra-mini-41mm-dourado-bluetooth-e-gps.webp" alt="Smartwatch Ultra Mini Gold - Lateral" loading="lazy" />
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_814902-MLB83674102906_042025-F-smartwatch-ultra-mini-41mm-dourado-bluetooth-e-gps.webp" alt="Smartwatch Ultra Mini Gold - Display" loading="lazy" />
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_721762-MLB83674377546_042025-F-smartwatch-ultra-mini-41mm-dourado-bluetooth-e-gps.webp" alt="Smartwatch Ultra Mini Gold - Pulseira" loading="lazy" />
+    </div>
+    <p>O Smartwatch Ultra Mini Gold combina design elegante com tecnologia avançada. Controle suas notificações, monitoramento de saúde, GPS integrado e muito mais — tudo no seu pulso. Ideal para quem busca estilo e funcionalidade em um só dispositivo.</p>
+  </section>
+
+  <section id="beneficios">
+    <h2>Benefícios do Ultra Mini Gold</h2>
+    <div class="container-beneficios">
+      <div class="beneficio">
+        <div class="icon">⌚</div>
+        <h3>Design Compacto e Elegante</h3>
+        <p>Modelo ultra mini com acabamento dourado que combina com qualquer estilo.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icon">📱</div>
+        <h3>Notificações em Tempo Real</h3>
+        <p>Receba alertas de chamadas, mensagens e redes sociais direto no seu pulso.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icon">❤️</div>
+        <h3>Monitoramento de Saúde</h3>
+        <p>Acompanhamento de batimentos cardíacos e qualidade do sono para sua saúde em dia.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icon">📍</div>
+        <h3>GPS Integrado</h3>
+        <p>Rastreamento preciso para atividades físicas e localização em tempo real.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icon">🔋</div>
+        <h3>Bateria de Longa Duração</h3>
+        <p>Até vários dias de uso com uma única carga.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icon">💧</div>
+        <h3>Resistente à Água</h3>
+        <p>Use sem preocupações em chuva ou durante exercícios.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="container-depoimentos">
+      <div class="depoimento">
+        <p class="texto">“Adorei o design compacto e a qualidade do Ultra Mini Gold. Uso todos os dias para monitorar minha saúde e acompanhar minhas notificações.”</p>
+        <p class="autor">— Mariana S.</p>
+      </div>
+      <div class="depoimento">
+        <p class="texto">“O GPS funciona perfeitamente e a bateria dura muito. Excelente custo-benefício para quem quer um smartwatch funcional e bonito.”</p>
+        <p class="autor">— Carlos M.</p>
+      </div>
+      <div class="depoimento">
+        <p class="texto">“Recomendo para quem busca um smartwatch com funções completas e design elegante. O atendimento foi rápido e eficiente.”</p>
+        <p class="autor">— Ana P.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <h3>O smartwatch é compatível com Android e iOS?</h3>
+      <p style="display:none;">Sim, o Ultra Mini Gold funciona perfeitamente com ambos os sistemas operacionais.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Qual a duração da bateria?</h3>
+      <p style="display:none;">A bateria dura até vários dias dependendo do uso, com carregamento rápido.</p>
+    </div>
+    <div class="faq-item">
+      <h3>O smartwatch é à prova d'água?</h3>
+      <p style="display:none;">O smartwatch é resistente à água, ideal para uso diário e exercícios.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sandriane - Todos os direitos reservados | <a href="#apresentacao-produto">Voltar ao topo</a>
+  </footer>
+
+</body>
+</html>
